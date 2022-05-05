@@ -1,8 +1,8 @@
-#**Projeto Integrador - Bootcamp Mercado Livre **
+# **Projeto Integrador - Bootcamp Mercado Livre**
 
-#**MERCADO LIVRE - FRESCOS **
+# **MERCADO LIVRE - FRESCOS**
 
-##Tecnologias utilizadas 
+## Tecnologias utilizadas 
 - Java 
 - SpringBoot 
 - Maven 
@@ -23,29 +23,29 @@
 
 ***
 
-##Tópicos  
-##Descrição: 
+## Tópicos  
+## Descrição: 
 - API de produtos frescos realizando toda logística de disponibilidade de compra e venda
 
-##Funcionalidade: 
+## Funcionalidade: 
 - Comprar produtos adicionando a um carrinho e também vender
 
-##Deploy da Aplicação: 
+## Deploy da Aplicação: 
 - Push do branch master que se faz no repositório Git ou deploy automatizado é o Jenkins.
 
 ***
 
-##Como rodar a aplicação: 
+## Como rodar a aplicação: 
 - docker-compose --file docker-compose.dev.yml up
 
 ***
 
-##Descrição do projeto  
+## Descrição do projeto  
 Construção de API para realizar a logística de produtos alimentícios em estado de congelados, refrigerados, fresco para serem  armazenados em seus determinados setores com organização de volumes e sua respectiva venda em carrinho com suas ordens  logística
 
 ***
 
-##Funcionalidades
+## Funcionalidades
 - Representante do armazém de distribuição, inseri um lote de 
 - produtos no armazém de distribuição para registrar a existência de estoque
 - Comprador ativo adiciona produtos ao carrinho de compras do marketplace para compra-los, se desejar
@@ -55,7 +55,7 @@ Construção de API para realizar a logística de produtos alimentícios em esta
 
 ***
 
-##Layout ou Deploy da Aplicação
+## Layout ou Deploy da Aplicação
 
 - [EndPoint Requisito 1](http://localhost:8080/ap i/v1/fresh-products  /inboundorder/)
 
@@ -63,7 +63,7 @@ Construção de API para realizar a logística de produtos alimentícios em esta
 
 ***
 
-##EndPoint REQ2: 
+## EndPoint REQ2: 
 - [EndPoint Requisito 2](http://localhost:8080 /api/v1/fresh-products/)
 
 - [EndPoint Requisito 2](http://localhost:8080 /api/v1/fresh-products /list?querytype=  [categoría producto])
@@ -76,37 +76,31 @@ Construção de API para realizar a logística de produtos alimentícios em esta
 
 ***
 
-##EndPoint REQ3: 
+## EndPoint REQ3: 
 - [EndPoint Requisito 3](http://localhost:8080/api /v1/fresh-products/list? querytype=[idProducto])
 
 - [EndPoint Requisito 3](http://localhost:8080/api /v1/fresh-products/list? querytype=[idProducto] querytype=[L])
 
 ***
 
-##EndPoint REQ4: 
+## EndPoint REQ4: 
 - [EndPoint Requisito 4](http://localhost:8080 /api/v1/fresh-products /warehouse  /querytype=id product])
 
 ***
 
-##EndPoint REQ5: 
+## EndPoint REQ5: 
 - [EndPoint Requisito 5](http://localhost:8080/api /v1/fresh-products/due date/queryparam=  [number of days]  queryparam=[section])
 
 - [EndPoint Requisito 5](http://localhost:8080/api /v1/fresh-products/due date/list?queryparam= [number of days]  queryparam=[category] queryparam=[asc])
 
 ***
 
-##EndPoint REQ6:
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer/[id])
-
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer?  queryparam[id]  &queryparam=[status])
-
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer?  queryparam[id]  &queryparam[David]&query param[email])
-
-- [EndPoint Requisito 6](http://localhost:8080/api/v1 /fresh-products/buyer/[id])
+## EndPoint REQ6:
+- [EndPoint Requisito 6](/api/v1/fresh-products/seller/products)
 
 ***
 
-##Pré-requisitos: 
+## Pré-requisitos: 
 
 - Instalação do Java 11 JDK ou versão mais atualizada na maquina
 
@@ -121,38 +115,38 @@ Construção de API para realizar a logística de produtos alimentícios em esta
 
 ***
 
-#**Como rodar a aplicação:**
+## **Como rodar a aplicação:**
 
-##No terminal, clone o projeto; git clone https ou ssh do projeto: 
+## No terminal, clone o projeto; git clone https ou ssh do projeto: 
 - git clone https://github.com/maik-henrique/DH-Projeto-Integrador.git 
-#Acesse a pasta do projeto via terminal, para iniciar o projeto: 
+# Acesse a pasta do projeto via terminal, para iniciar o projeto: 
 - mvn clean install 
 
-##Em seguida execute o servidor Tomcat 
+## Em seguida execute o servidor Tomcat 
 - mvn spring-boot:run  
 
-##Inicie os conteiners referente a aplicacao com: 
+## Inicie os conteiners referente a aplicacao com: 
 - docker-compose docker-compose --file docker-compose.dev.yml up 
 
 Inicialize a aplicacao springboot na IDE e acessse os endpoints  utilizando Postman
 
 ***
 
-##Como rodar os testes:
-##Para iniciar os testes em linha de comando utilizar: 
+## Como rodar os testes:
+## Para iniciar os testes em linha de comando utilizar: 
 - mvn tests 
 
-##Para iniciar os testes no SonarQube: 
+## Para iniciar os testes no SonarQube: 
 - mvn sonar:sonar -Dsonar.projectKey={KEY DO PROJETO CRIADO NO SONAR} - Dsonar.host.url=http://127.0.0.1:9000 -Dsonar.login={CHAVE DE  AUTENTICACAO DO SONAR} 
 
 ***
 
-#**Diagrama - # DER:**
+## **Diagrama - # DER:**
 [Diagrama Entidade e Relacionamento](https://whimsical.com/4VfH3PMQLRV3u33RUJniwY)
 
 ***
 
-##Classes de teste referente ao Requisito 6: 
+## Classes de teste referente ao Requisito 6: 
 - Controller/BuyerController.java 
 - Service/BuyerService.java 
 - integration/BuyerControllerTest.java
@@ -160,14 +154,14 @@ Inicialize a aplicacao springboot na IDE e acessse os endpoints  utilizando Post
 
 ***
 
-##niciando/Configurando banco de dados
-##Para iniciar o servico de banco de dados no docker: 
+## Iniciando/Configurando banco de dados
+## Para iniciar o servico de banco de dados no docker: 
 - docker-compose --file docker-compose.dev.yml up
 
 
 ***
 
-##Linguagens, dependencias e libs utilizadas: 
+## Linguagens, dependencias e libs utilizadas: 
 - Java 
 - SpringBoot 
 - Maven 
@@ -183,7 +177,7 @@ Inicialize a aplicacao springboot na IDE e acessse os endpoints  utilizando Post
 
 ***
 
-##Tarefas em aberto: 
+## Tarefas em aberto: 
 
 - Implementar microservices
 
@@ -195,7 +189,7 @@ Inicialize a aplicacao springboot na IDE e acessse os endpoints  utilizando Post
 
 ***
 
-##Desenvolvedores:
+## Desenvolvedores:
 
 @Bruno Mendes
 
@@ -212,8 +206,15 @@ Inicialize a aplicacao springboot na IDE e acessse os endpoints  utilizando Post
 @Pedro Henrique Dalpa
 
 
-##Requisito 6 
+## Requisito 6 
 
 O UserStory do requisito 6 está na pasta User History e diagrama de entidades.
 A collection para testar no postman está na pasta CollectionsPostman
+
+### Os arquivos criados para esse requisito foram os seguintes:
+
+- SellerController
+- SellerService
+- SellerControllerTest
+- SellerServiceTest
 > 
